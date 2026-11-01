@@ -55,3 +55,10 @@ p { margin: 0; }
 .site-footer { padding-block: 28px; background: var(--color-text); color: #FFFFFF; }
 @media (min-width: 768px) { .container { width: min(100% - 64px, var(--container-width)); } .site-header__inner { flex-wrap: nowrap; } .site-nav { order: initial; flex-basis: auto; } .hero { grid-template-columns: 1fr 1fr; gap: 56px; padding-block: 80px; } .steps-grid { grid-template-columns: repeat(3, 1fr); } .section { padding-block: 72px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* Rescuer dashboard */
+.rescuer-summary { display: grid; gap: 16px; }
+.summary-card { display: grid; gap: 8px; color: var(--color-text-soft); }
+.summary-card strong { color: var(--color-primary-dark); font-family: var(--font-heading); font-size: 2rem; }
+.rescuer-actions { display: flex; flex-wrap: wrap; gap: 12px; }
+@media (min-width: 768px) { .rescuer-summary { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
